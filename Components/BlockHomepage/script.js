@@ -15,20 +15,28 @@ class BlockHomepage extends window.HTMLElement {
   }
 
   resolveElements () {
-    this.$button = $('.toggle', this)
+    this.$buttonInfo = $('.toggle-info', this)
+    this.$buttonAbout = $('.toggle-about', this)
     this.$info = $('.info', this)
+    this.$about = $('.about', this)
   }
 
   bindFunctions () {
     this.showInfo = this.showInfo.bind(this)
+    this.showAbout = this.showAbout.bind(this)
   }
 
   bindEvents () {
-    this.$button.on('click', this.showInfo)
+    this.$buttonInfo.on('click', this.showInfo)
+    this.$buttonAbout.on('click', this.showAbout)
   }
 
   showInfo (e) {
     this.$info.fadeToggle()
+  }
+
+  showAbout (e) {
+    this.$about.fadeToggle()
   }
 }
 
