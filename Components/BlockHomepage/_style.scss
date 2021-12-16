@@ -40,9 +40,9 @@
 
     .toggle {
       align-items: center;
-      background-color: #fafaf0;
-      border: 2px solid #e4a46f;
-      color: #e4a46f;
+      background-color: $khaki;
+      border: 2px solid $orange;
+      color: $orange;
       cursor: pointer;
       display: flex;
       flex-flow: row wrap;
@@ -58,27 +58,27 @@
   .info,
   .about {
     @include reset-content-margins;
-    background-color: #fafaf0;
-    border: 4px solid #e4a46f;
+    background-color: $khaki;
+    border: 4px solid $orange;
     box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
-    color: #e4a46f;
+    color: $orange;
     display: none;
     height: calc(100vh - 40px);
-    left: 20px;
+    left: 15%;
     margin-bottom: 0;
     overflow-y: auto;
     padding: 40px;
     position: fixed;
     text-align: inherit;
     top: 20px;
-    width: 90%;
+    width: 70%;
     z-index: 4;
   }
 
   .image:nth-child(1) {
     &:hover {
       &::before {
-        background-color: #e4a46f;
+        background-color: $khaki;
         background-image: url('/wp-content/uploads/2021/12/broudou1.jpeg');
         background-position: center;
         background-repeat: no-repeat;
@@ -98,7 +98,7 @@
   .image:nth-child(2) {
     &:hover {
       &::before {
-        background-color: #fafaf0;
+        background-color: $khaki;
         background-image: url('/wp-content/uploads/2021/12/broudou2.jpeg');
         background-position: center;
         background-repeat: no-repeat;
@@ -119,7 +119,7 @@
     &:hover {
       &::before {
 
-        background-color: #69a75a;
+        background-color: $khaki;
         background-image: url('/wp-content/uploads/2021/12/broudou3.jpeg');
         background-position: center;
         background-repeat: no-repeat;
@@ -140,7 +140,7 @@
     &:hover {
       &::before {
 
-        background-color: #ebf0d3;
+        background-color: $khaki;
         background-image: url('/wp-content/uploads/2021/12/broudou4.jpeg');
         background-position: center;
         background-repeat: no-repeat;
@@ -160,7 +160,7 @@
   .image:nth-child(5) {
     &:hover {
       &::before {
-        background-color: #bfabbe;
+        background-color: $khaki;
         background-image: url('/wp-content/uploads/2021/12/broudou5.jpeg');
         background-position: center;
         background-repeat: no-repeat;
@@ -180,7 +180,7 @@
   .image:nth-child(6) {
     &:hover {
       &::before {
-        background-color: #b6b6ab;
+        background-color: $khaki;
         background-image: url('/wp-content/uploads/2021/12/broudou6.jpeg');
         background-position: center;
         background-repeat: no-repeat;
@@ -200,7 +200,7 @@
   .image:nth-child(7) {
     &:hover {
       &::before {
-        background-color: #eff4e7;
+        background-color: $khaki;
         background-image: url('/wp-content/uploads/2021/12/broudou7.jpeg');
         background-position: center;
         background-repeat: no-repeat;
