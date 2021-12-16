@@ -43,9 +43,12 @@
     z-index: 4;
 
     @media (max-width: $breakpoint-mobile-horizontal) {
+      bottom: 20px;
       flex-flow: row wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       left: 0;
+      padding: 0 $container-padding-mobile;
+      top: auto;
       width: 100%;
     }
 
@@ -97,7 +100,7 @@
       height: calc(100vh - 100px);
       left: 5%;
       padding: $container-padding-mobile;
-      top: $container-padding-mobile * 4;
+      top: $container-padding-mobile;
       width: 90%;
     }
   }
