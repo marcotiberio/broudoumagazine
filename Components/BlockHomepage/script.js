@@ -33,10 +33,12 @@ class BlockHomepage extends window.HTMLElement {
 
   showInfo (e) {
     this.$info.fadeToggle()
+    this.$about.fadeOut()
   }
 
   showAbout (e) {
     this.$about.fadeToggle()
+    this.$info.fadeOut()
   }
 }
 

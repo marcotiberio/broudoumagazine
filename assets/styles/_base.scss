@@ -9,11 +9,13 @@
 @include font-face('Montserrat', 'montserrat-v14-latin-700', '700', 'normal');
 @include font-face('Montserrat', 'montserrat-v14-latin-700italic', '700', 'italic');
 
+@include font-face('SportingGrotesque', 'SportingGrotesqueRegular', '400', 'normal');
+
 html {
   background-color: $color-background;
   box-sizing: border-box;
   color: $color-text;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: 'SportingGrotesque', Helvetica, Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -42,7 +44,7 @@ body {
 */
 
 #{$heading-selectors} {
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.45;
   margin-bottom: 0.9rem;
   margin-top: 0;
@@ -588,7 +590,7 @@ select {
   @include center;
 
   @media (min-width: $breakpoint-tablet) {
-    @include center($padding: $container-padding-tablet);
+    @include center($padding: $container-padding-desktop);
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -608,7 +610,7 @@ select {
   text-align: center;
 
   @media (min-width: $breakpoint-tablet) {
-    margin-bottom: $container-padding-tablet;
+    margin-bottom: $container-padding-desktop;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -623,7 +625,7 @@ select {
   text-align: center;
 
   @media (min-width: $breakpoint-tablet) {
-    margin-top: $container-padding-tablet;
+    margin-top: $container-padding-desktop;
   }
 
   @media (min-width: $breakpoint-desktop) {
