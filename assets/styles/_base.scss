@@ -5,13 +5,14 @@
 */
 
 @include font-face('SportingGrotesque', 'SportingGrotesqueRegular', '400', 'normal');
+@include font-face('Swansea', 'SwanseaRegular', '400', 'normal');
 
 html {
   background-color: $color-background;
   box-sizing: border-box;
   color: $color-text;
-  font-family: 'SportingGrotesque', Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-family: 'Swansea', Helvetica, Arial, sans-serif;
+  font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   height: 100%;
