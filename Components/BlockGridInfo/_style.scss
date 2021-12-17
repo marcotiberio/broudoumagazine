@@ -1,0 +1,43 @@
+[is='flynt-block-grid-info'] {
+  margin-top: -35px;
+
+  .container {  
+    padding: 0 $container-padding-mobile;
+
+    .grid {
+      @include reset-list;
+      column-gap: $container-padding-desktop;
+      display: grid;
+      grid-template-columns: 2fr 4fr 1fr 1fr 0.5fr;
+
+      @media (max-width: $breakpoint-tablet-horizontal) {
+        grid-auto-rows: auto;
+        grid-template-columns: 2fr 4fr;
+        row-gap: $container-padding-desktop;
+      }
+
+      @media (max-width: $breakpoint-mobile-horizontal) {
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .panel {
+      align-items: flex-start;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+
+      &-title {
+        margin-bottom: $container-padding-mobile;
+        text-transform: uppercase;
+      }
+
+      &:first-child {
+        .panel-title {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

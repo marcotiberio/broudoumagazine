@@ -2,8 +2,20 @@
   $color-error: #ef3f45;
 
   .preContent {
+    position: fixed;
+    right: $container-padding-mobile;
+    text-transform: uppercase;
+    top: 24px;
+    
     @media (min-width: $breakpoint-desktop) {
-      margin-bottom: 40px;
+      position: fixed;
+      right: $container-padding-mobile;
+      text-transform: uppercase;
+      top: 24px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -13,9 +25,101 @@
     }
   }
 
+  .container {
+    background-color: $white;
+    display: none;
+    height: 100vh;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  .button-close {
+    font-size: 20px;
+    position: fixed;
+    right: $container-padding-mobile;
+    top: $container-padding-mobile;
+    z-index: 1;
+  }
+
   .form {
+    height: 100%;
+    left: 50%;
     margin: 0 auto;
     max-width: $content-max-width + 100px;
+    overflow-y: auto;
+    padding: $container-padding-desktop;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      left: 0;
+      max-width: 700px;
+      padding: $container-padding-desktop;
+      top: 0;
+      transform: none;
+    }
+    
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      left: 0;
+      max-width: 350px;
+      padding: $container-padding-mobile;
+      top: $container-padding-mobile;
+      transform: none;
+    }
+    
+    &-col-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-bottom: $container-padding-desktop;
+
+      p {
+        margin: 0;
+        opacity: 0.7;
+      }
+    }
+
+    &-col-2 {
+      column-gap: $container-padding-mobile;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: $container-padding-desktop;
+
+      @media (max-width: $breakpoint-mobile-horizontal) {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: $container-padding-mobile;
+      }
+    }
+
+    &-col-3 {
+      column-gap: $container-padding-mobile;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: $container-padding-desktop;
+
+      @media (max-width: $breakpoint-mobile-horizontal) {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: $container-padding-mobile;
+      }
+    }
+
+    .wpcf7-submit {
+      background-color: $black;
+      border-color: $black;
+      color: $white;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+
+
 
     // Contact form inserts <br> to new lines, so if you hide the label
     // the <br> element needs to be hidden as well.
@@ -25,7 +129,7 @@
 
     &.boxPadding {
       @media (min-width: $breakpoint-tablet) {
-        padding: 50px;
+        padding: $container-padding-mobile;
       }
     }
 

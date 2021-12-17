@@ -1,18 +1,14 @@
 <div is="flynt-form-contact-form-7" class="flyntComponent componentSpacing {{ options.theme }}">
-  <div class="container centerMaxWidthContainer">
-    {% if preContentHtml %}
-      <div class="preContent">
-        {{ preContentHtml|e('wp_kses_post') }}
-      </div>
-    {% endif %}
-    <div class="form {{ options.card ? 'themeReset boxPadding' }}">
+  {% if preContentHtml %}
+    <div class="preContent button-reserve">
+      {{ preContentHtml|e('wp_kses_post') }}
+    </div>
+  {% endif %}
+  <div class="container container-form">
+    <div class="button-close">✕</div>
+    <div class="form {{ options.card ? 'themeReset' }}">
       {% set formShortcode = '[contact-form-7 id="' ~ formId ~ '"]' %}
       {{ formShortcode|shortcodes }}
-      {% if contentFooterHtml %}
-        <div class="postContent">
-          {{ contentFooterHtml|e('wp_kses_post') }}
-        </div>
-      {% endif %}
     </div>
   </div>
 </div>

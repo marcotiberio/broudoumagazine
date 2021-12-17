@@ -1,0 +1,18 @@
+<div class="flyntComponent" is="flynt-block-grid-info">
+  <div class="container container--fullWidth">
+    <ul class="grid">
+      {% for column in gridColumns %}
+        <li class="panel">
+          <div class="panel-title">
+            {{ column.columnTitle|e }}
+          </div>
+          <div class="panel-content">
+            <div class="panel-inner">
+              {{ column.columnContent|e('wp_kses_post') }}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+  </div>
+</div>

@@ -92,11 +92,7 @@ function getACFFields()
         [
             'label' => __('Title', 'flynt'),
             'name' => 'preContentHtml',
-            'type' => 'wysiwyg',
-            'delay' => 1,
-            'media_upload' => 0,
-            'instructions' => __('Want to add a headline? And a paragraph? Go ahead! Or just leave it empty and nothing will be shown.', 'flynt'),
-            'toolbar' => 'full',
+            'type' => 'text',
         ],
         [
             'label' => __('Contact Form 7 Form', 'flynt'),
@@ -111,15 +107,6 @@ function getACFFields()
             'ui' => 1,
             'required' => 1,
             'instructions' => __('If there is no form available, please first create a suitable one in the <a href="' . admin_url('admin.php?page=wpcf7') . '" target="_blank">Contact Form 7 admin page</a>.', 'flynt'),
-        ],
-        [
-            'label' => __('Content Footer', 'flynt'),
-            'name' => 'contentFooterHtml',
-            'type' => 'wysiwyg',
-            'delay' => 1,
-            'media_upload' => 0,
-            'toolbar' => 'full',
-            'required' => 0,
         ],
         [
             'label' => __('Options', 'flynt'),

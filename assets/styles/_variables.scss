@@ -18,16 +18,16 @@ $black: #000;
 $khaki: #fafaf0;
 $orange: #e4a46f;
 
-$color-brand: #0d8eff;
-$color-accent: #f96417;
+$color-brand: $orange;
+$color-accent: $orange;
 $color-background: #fff;
-$color-contrast: #414751;
-$color-text: $color-contrast;
-$color-headline: #0b1016;
-$color-border: #d8d8d8;
+$color-contrast: $black;
+$color-text: $black;
+$color-headline: $black;
+$color-border: $black;
 
-$color-background-light: #f2f6fe;
-$color-background-dark: #091a41;
+$color-background-light: $white;
+$color-background-dark: $black;
 $color-background-hero: $color-brand;
 
 $heading-selectors: 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6';
