@@ -35,7 +35,7 @@ function getACFLayout()
                         'name' => 'columnContent',
                         'type' => 'wysiwyg',
                         'tabs' => 'visual,text',
-                        'media_upload' => 0,
+                        'media_upload' => 1,
                         'delay' => 1,
                     ],
                 ],
