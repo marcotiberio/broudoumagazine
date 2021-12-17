@@ -2,10 +2,20 @@
   $color-error: #ef3f45;
 
   .preContent {
+    animation: blink 2s linear;
+    animation-iteration-count: 2;
     position: fixed;
     right: $container-padding-mobile;
+    text-decoration: underline;
     text-transform: uppercase;
+    text-underline-offset: 3px;
     top: 24px;
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
     
     @media (min-width: $breakpoint-desktop) {
       position: fixed;
@@ -42,6 +52,10 @@
     right: $container-padding-mobile;
     top: $container-padding-mobile;
     z-index: 1;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .form {
