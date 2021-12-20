@@ -21,6 +21,9 @@
   .logo {
     display: block;
     height: 100%;
+    left: $container-padding-mobile;
+    position: fixed;
+    top: $container-padding-mobile;
     z-index: 2000;
 
     &-image {
