@@ -1,16 +1,19 @@
 <div class="flyntComponent" is="flynt-block-homepage">
   <div class="background"></div>
-  <div class="container">
+  <video autoplay muted loop class="background-video" id="backgroundVideo">
+    <source src="{{ videoLink }}" type="video/mp4">
+  </video>
+  {# <div class="container">
     <div class="image"></div><div class="image"></div><div class="image"></div><div class="image"></div>
     <div class="image"></div><div class="image"></div><div class="image"></div><div class="image"></div>
     <div class="image"></div><div class="image"></div><div class="image"></div><div class="image"></div>
-  </div>
-  <div class="info content">
+  </div> #}
+  {# <div class="info content">
     {{ contentHtml|e('wp_kses_post') }}
   </div>
   <div class="about content">
     {{ contentAboutHtml|e('wp_kses_post') }}
-  </div>
+  </div> #}
   <div class="buttons">
     <div class="toggle toggle-info"><a href="{{ pageLinkButton }}">{{ pageLinkTitle }}</a></div>
     {# <div class="toggle toggle-about" id="toggleAbout">About</div> #}

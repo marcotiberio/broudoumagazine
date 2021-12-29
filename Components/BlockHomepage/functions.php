@@ -18,6 +18,12 @@ function getACFLayout()
                 'endpoint' => 0,
             ],
             [
+                'label' => __('Video Link', 'flynt'),
+                'name' => 'videoLink',
+                'type' => 'text',
+                'required' => 0
+            ],
+            [
                 'label' => __('Page Link - Title', 'flynt'),
                 'name' => 'pageLinkTitle',
                 'type' => 'text',

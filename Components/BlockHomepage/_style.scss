@@ -4,10 +4,11 @@
   width: 100vw;
 
   .background {
-    background-image: url('/wp-content/uploads/2021/12/broudou8.jpeg');
+    background-image: url('/wp-content/uploads/2021/12/backgroundmobile.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: none;
     height: 100vh;
     left: 0;
     position: fixed;
@@ -15,8 +16,23 @@
     width: 100vw;
     z-index: 1;
 
-    @media (max-width: $breakpoint-mobile-horizontal) {
-      background-image: url('/wp-content/uploads/2021/12/broudou8-mobile.jpeg');
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      background-image: url('/wp-content/uploads/2021/12/backgroundmobile.jpg');
+      display: block;
+    }
+
+    &-video {
+      display: block;
+      height: 100vh;
+      left: 0;
+      object-fit: cover;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+  
+      @media (max-width: $breakpoint-tablet-horizontal) {
+        display: none;
+      }
     }
   }
 
@@ -43,19 +59,15 @@
     z-index: 4;
 
     @media (max-width: $breakpoint-mobile-horizontal) {
-      bottom: 20px;
       flex-flow: row wrap;
-      justify-content: space-between;
-      left: 0;
-      padding: 0 $container-padding-mobile;
-      top: auto;
+      justify-content: flex-end;
+      padding: 0;
+      right: 0;
       width: 100%;
     }
 
     .toggle {
       align-items: center;
-      background-color: $khaki;
-      border: 2px solid $orange;
       color: $orange;
       cursor: pointer;
       display: flex;
